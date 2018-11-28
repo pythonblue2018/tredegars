@@ -1,0 +1,44 @@
+{% extends "tredegars/base.html" %}
+{% load staticfiles %}
+{% block content %}
+
+    <h1 style="color:blue;">{{title}}</h1>
+    <div>
+        Welcome to Tredegars Trading. SJT Wholesale is trading name of Tredegars.
+        At Tredegars, we care about our customers. We have a wide range of Water, Drinks,
+        Grocery, Toiletries, Confectionery, Catering Supply, Disposables & Cleaning Products.
+        Please contact us for more product information and a price quote.
+        Thank you for visiting our website.
+    </div>
+    <br>
+<figure class="figure">
+    <img src="{% static 'tredegars/img/bottles.jpg' %}" class="responsive-img" style='max-height:400px;' alt="face">
+    <figcaption class="figure-caption ">A wide range of water and drinks available in stock.</figcaption>
+</figure>
+<br>
+<figure class="figure">
+    <img src="{% static 'tredegars/img/softdrink.jpg' %}" class="responsive-img" style= 'max-width:200px; max-height:250px; ' alt="face">
+    <figcaption class="figure-caption ">All kinds of can softdrink.</figcaption>
+</figure>
+<figure class="figure">
+    <img src="{% static 'tredegars/img/smartwater.jpg'%}" class="figure-img img-fluid rounded" style='max-width:200px; max-height:250px;' alt="A generic square placeholder image with rounded corners in a figure.">
+    <figcaption class="figure-caption ">Smartwater still water.</figcaption>
+</figure>
+<figure class="figure">
+    <img src="{% static 'tredegars/img/drinks.jpg' %}" class="responsive-img" style='max-width:200px; max-height:250px; ' alt="face">
+    <figcaption class="figure-caption ">Kids & sports drinks.</figcaption>
+</figure>
+<figure class="figure">
+    <img src="{% static 'tredegars/img/eco.png' %}" class="responsive-img" style='max-width:200px; max-height:250px; ' alt="face">
+    <figcaption class="figure-caption ">Highland spring water eco bottle.</figcaption>
+</figure>
+<figure class="figure">
+    <img src="{% static 'tredegars/img/evian.jpg' %}" class="responsive-img" style='max-width:200px; max-height:250px; ' alt="face">
+    <figcaption class="figure-caption ">Evian still water bottle.</figcaption>
+</figure>
+<figure class="figure">
+    <img src="{% static 'tredegars/img/images.jpg' %}" class="responsive-img" style='max-width:200px; max-height:250px; ' alt="face">
+    <figcaption class="figure-caption ">Fizzy caned drinks.</figcaption>
+</figure>
+
+{% endblock content %}

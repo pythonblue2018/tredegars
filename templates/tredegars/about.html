@@ -1,0 +1,27 @@
+{% extends "tredegars/base.html" %}
+
+{% block content %}
+    <h2>{{title}}</h2>
+    <div>
+        <div>
+        Welcome to Tredegars Trading. SJT Wholesale is trading name of Tredegars.
+        At Tredegars, we care about our customers. We have a wide range of Water, Drinks,
+        Grocery, Toiletries, Confectionery, Catering Supply, Disposables & Cleaning Products.
+        Please contact us for more product information and a price quote.
+        Thank you for visiting our website.
+    </div>
+        <br>
+    {% for post in posts %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.author }}</a>
+              <small class="text-muted">{{ post.date_posted }}</small>
+            </div>
+            <h4><a class="article-title" href="#">{{ post.title }}</a></h4>
+            <p class="article-content">{{ post.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+    </div>
+{% endblock content %}
