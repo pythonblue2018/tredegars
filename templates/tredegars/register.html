@@ -3,9 +3,15 @@
     <div class="page-header">
         <h2>{{title}}</h2>
     </div>
+
+{% if user.is_authenticated %}
+    <h2>Successfully logged in as {{ user.username }}</h2>
+{%else%} <h2>Not logged in.</h2>
+{% endif %}
+
     <div class="border-top pt-3">
             <small class="text-muted">
-                <h5> Already have an account? <a class="ml-2" href="#">Log in</a></h5>
+                <h5> Already have an account? <a class="ml-2" href="/tredegars/login">Log in</a></h5>
             </small>
     </div>
 

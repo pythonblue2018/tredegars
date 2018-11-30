@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm
 
 posts = [
     {
@@ -35,3 +36,7 @@ def contact(request):
 def register(request):
     form = UserCreationForm(request.POST)
     return render(request, 'tredegars/register.html', {'form': form, 'title': 'User registration'})
+
+def login(request):
+    form1 = AuthenticationForm(request.POST)
+    return render(request, 'tredegars/login.html', {'form': form1, 'title': 'User Login'})
